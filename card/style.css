@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+body {
+  background-color: #090b1a;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow-y: hidden;
+  font-family: 'Inter';
+  color: #fff;
+}
+
+.card {
+  display: flex;
+  border-radius: 10px;
+  height: 380px;
+  width: 977px;
+  overflow: hidden;
+}
+
+.text {
+  background-color: #1b1938;
+  width: 488px;
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.content {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 27px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 100px;
+}
+
+.info p {
+  padding: 0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 0.1;
+  color: #ffffff99;
+}
+
+.purple {
+  color: #aa5cdb;
+}
+
+.image {
+  width: 489px;
+  background: url('https://smthom.github.io/Stats-preview-card-component-solution/images/image-header-desktop.jpg');
+}
+
+.overlay {
+  background: #aa5cdb8c;
+  height: 100%;
+}
