@@ -8,14 +8,8 @@
 .container {
   color: #111111;
   background-color: #f2f2f2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-/*
-  ----Heading----
-*/
 .heading {
   padding: 20px;
   display: flex;
@@ -24,29 +18,26 @@
   gap: 30px;
 }
 
-.h1 {
+.heading h1 {
   font-weight: 400;
   font-size: 3rem;
 }
 
-.pp {
-  text-align: center;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 1.125rem;
-}
-
-.ug {
+.heading span {
   width: 140px;
   height: 5px;
   background-color: #f84e41;
   border-radius: 12px;
 }
 
-/*
-  ----Box Section----
-*/
-.box-container {
+.heading p {
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.125rem;
+}
+
+.card-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -54,11 +45,10 @@
   margin: 40px 30px;
 }
 
-.box {
+.card {
   max-width: 280px;
+  max-height: 360px;
   padding: 20px 40px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.125rem;
   text-align: center;
   line-height: 28px;
   background-color: white;
@@ -70,18 +60,18 @@
   gap: 10px;
 }
 
-.oop {
+.card img {
+  height: 71px;
+  width: 71px;
+}
+
+.card h2 {
   font-size: 1.25rem;
 }
 
-.po {
+.card p {
   line-height: 1.52rem;
   font-style: italic;
-}
-
-.img {
-  height: 71px;
-  width: 71px;
 }
 
 footer {
