@@ -10,10 +10,9 @@
 </head>
 
 <body>
-  <main>
+  <main class="container">
     <div class="overlay"></div>
     <div class="side-menu">
-
       hello i am side menu
     </div>
     <div class="header">
@@ -38,23 +37,36 @@
   </main>
   <div style="height: 100vh;">hello</div>
   <script>
-    var menu = document.querySelector(".menu")
-    var sideMenu = document.querySelector(".side-menu")
-    var overlay = document.querySelector(".overlay")
+
+    const menu = document.querySelector(".menu")
+    const sideMenu = document.querySelector(".side-menu")
+    const overlay = document.querySelector(".overlay")
+    const container = document.querySelector(".container")
+
+    window.addEventListener("scroll", function () {
+      let x = window.pageYOffset
+      container.style.backgroundPositionY = x * -0.1 + "px"
+    });
+
 
     const onSideMenuClose = () => {
-      sideMenu.style.display = "none"
+      sideMenu.style.visibility = "hidden"
+      sideMenu.style.transform = "translateX(" + (-300) + "px)"
+
       overlay.style.zIndex = "1"
       overlay.style.opacity = "0.3"
     }
+
     const onSideMenuOpen = () => {
-      sideMenu.style.display = "block"
+      sideMenu.style.visibility = "visible"
+      sideMenu.style.transform = "translateX(" + (0) + "px)"
       overlay.style.zIndex = "99"
       overlay.style.opacity = "0.6"
     }
 
     menu.addEventListener("click", () => {
-      if (sideMenu.style.display === "none") {
+      if (sideMenu.style.visibility === "hidden"
+      ) {
         onSideMenuOpen()
       }
       else {
