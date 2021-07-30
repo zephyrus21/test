@@ -27,7 +27,7 @@
           pretium feugiat.Duis sem est, viverra eu interdum ac, suscipit nec mauris. Suspendisse commodo tempor
           sagittis!
           In justo est, sollicitudin eu scelerisque pretium, placerat eget elit.</div>
-        <svg width="52" height="38" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="42" height="28" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M11.3217 15.0702L20.3217 2.07017C20.4255 1.92014 20.4863 1.74458 20.4975 1.56248C20.5087 1.38039 20.4698 1.1987 20.3851 1.0371C20.3005 0.875494 20.1732 0.740131 20.0171 0.645665C19.8611 0.551199 19.6821 0.50123 19.4997 0.501168L1.49969 0.501169C1.31716 0.501048 1.13809 0.550884 0.981867 0.645277C0.825647 0.73967 0.698241 0.875019 0.613457 1.03666C0.528673 1.19829 0.489744 1.38005 0.500889 1.56223C0.512035 1.74442 0.57283 1.92007 0.676686 2.07017L9.67669 15.0702C9.76912 15.2026 9.89216 15.3108 10.0354 15.3855C10.1786 15.4601 10.3377 15.4991 10.4992 15.4991C10.6607 15.4991 10.8198 15.4601 10.963 15.3855C11.1062 15.3108 11.2293 15.2026 11.3217 15.0702Z"
             fill="white" />
@@ -44,15 +44,17 @@
     const container = document.querySelector(".container")
 
     window.addEventListener("scroll", function () {
-      let x = window.pageYOffset
-      container.style.backgroundPositionY = x * -0.1 + "px"
+      if (window.innerWidth > 700) {
+        let x = window.pageYOffset
+        container.style.backgroundPositionY = x * -0.1 + "px"
+        overlay.style.backgroundPositionY = x * -0.1 + "px"
+      }
     });
 
 
     const onSideMenuClose = () => {
       sideMenu.style.visibility = "hidden"
       sideMenu.style.transform = "translateX(" + (-300) + "px)"
-
       overlay.style.zIndex = "1"
       overlay.style.opacity = "0.3"
     }

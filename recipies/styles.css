@@ -12,6 +12,7 @@
   height: 100vh;
   background-image: url('https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/915988c20bba56c0b5691503/pexels-photo-3218467.jpeg');
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   transition: all 0.6 s;
   transition-delay: 0.01s;
@@ -86,6 +87,7 @@
 @media (max-width: 700px) {
   .header_title {
     font-size: 2rem;
+    margin-top: 20px;
   }
   .header_sub-title {
     font-size: 1rem;
