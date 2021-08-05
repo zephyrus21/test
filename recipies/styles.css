@@ -139,12 +139,6 @@
   font-size: 0.95rem;
 }
 
-@media (max-width: 570px) {
-  .box {
-    padding: 0 100px;
-  }
-}
-
 .🍦_container {
   background-image: url('https://images03.nicepage.com/c461c07a441a5d220e8feb1a/e2f38b67aa6e56639487cb0f/ed-min.jpg');
   background-size: cover;
@@ -185,5 +179,11 @@
   }
   .🍦_main {
     flex: 1;
+  }
+}
+
+@media (max-width: 570px) {
+  .box {
+    padding: 0 100px;
   }
 }
