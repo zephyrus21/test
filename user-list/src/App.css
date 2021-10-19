@@ -1,18 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
 body {
   padding: 0;
   margin: 0;
-}
-.app {
-  height: 100vh;
+  font-family: "Montserrat", sans-serif;
 }
 
 .nav {
+  padding: 12px 60px;
   display: flex;
-  background-color: red;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ff2f2f;
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.btn {
+  margin: 0;
+  padding: 8px 20px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  color: white;
+  background-color: #ff2f2f;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #ff2f2f;
+}
+
+.no-users {
+  font-size: 72px;
+  font-weight: 600;
+  color: #fd5b5b99;
 }
 
 .card-container {
-  padding: 40px;
+  padding: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,12 +61,21 @@ body {
   justify-content: center;
   min-width: 300px;
   height: 100%;
-  background-color: #fff;
-  border-radius: 5px;
+  border-radius: 14px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  /* transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); */
 }
 
 .card img {
   border-radius: 50%;
+}
+
+.user-name {
+  font-size: 28px;
+  font-weight: 500;
+  color: #000;
+}
+
+.user-email {
+  margin-top: 0;
+  font-size: 16px;
 }

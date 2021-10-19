@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Spinner from "./spinner.svg";
 
 const App = () => {
   const [users, setUsers] = useState([]);
@@ -19,21 +20,24 @@ const App = () => {
   return (
     <div className='app'>
       <div className='nav'>
-        <button onClick={usersGetHandler}>Get Users</button>
+        <div className='logo'>Users List</div>
+        <p onClick={usersGetHandler} className='btn'>
+          Get Users
+        </p>
       </div>
       <div className='card-container'>
         {isLoading ? (
-          <div>Loading...</div>
+          <img src={Spinner} alt='' />
         ) : users.length === 0 ? (
-          <div>No users</div>
+          <div className='no-users'>No users</div>
         ) : (
           users.map((user) => (
             <div key={user.id} className='card'>
               <img src={user.avatar} alt='user image' />
-              <p>
+              <p className='user-name'>
                 {user.first_name} {user.last_name}
               </p>
-              <p>{user.email}</p>
+              <p className='user-email'>{user.email}</p>
             </div>
           ))
         )}
