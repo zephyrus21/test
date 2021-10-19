@@ -9,7 +9,8 @@
 
 .header_container {
   min-height: 100vh;
-  background-image: url('https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/915988c20bba56c0b5691503/pexels-photo-3218467.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/915988c20bba56c0b5691503/pexels-photo-3218467.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -21,8 +22,9 @@
 .overlay {
   position: absolute;
   background-color: black;
-  opacity: 0.3;
+  opacity: 0;
   min-height: 100vh;
+  height: 100%;
   width: 100%;
   z-index: 1;
 }
@@ -64,7 +66,7 @@
 .side-menu {
   visibility: hidden;
   position: absolute;
-  height: 100vh;
+  height: 100%;
   width: 300px;
   top: 0;
   left: 0;

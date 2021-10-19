@@ -1,0 +1,22 @@
+body {
+  height: 100vh;
+  background-color: #d6e1ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 400px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.up {
+  background-color: #382ae1;
+  height: 200px;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}

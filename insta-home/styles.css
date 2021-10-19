@@ -1,0 +1,56 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.mobiles {
+  flex: 0.5;
+  position: relative;
+  height: 100%;
+}
+
+.mobile {
+  margin-top: 60px;
+  height: 676px;
+  position: absolute;
+}
+
+.m2 {
+  left: 100px;
+}
+
+.main {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hr {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .mobiles {
+    display: none;
+  }
+  .main {
+    flex: 1;
+  }
+}
